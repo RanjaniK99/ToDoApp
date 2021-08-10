@@ -49,14 +49,14 @@ body {
   color: #fff;
   margin-left: 5px;
   font-size: 21px;
-  background: #7be849;
+  background: #8eca72;
   cursor: pointer;
   border-radius: 3px;
   opacity: 0.6;
 }
 .userType button:hover,
 .footer button:hover {
-  background: #23d60b;
+  background: #42e41a;
 }
 .userType button.active {
   opacity: 1;

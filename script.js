@@ -3,7 +3,6 @@ const addBtn = document.querySelector(".userType button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
 
-
 inputBox.onkeyup = ()=>{
   let userEnteredValue = inputBox.value; 
   if(userEnteredValue.trim() != 0){ 
