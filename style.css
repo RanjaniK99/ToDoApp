@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(to bottom, #e65ad3 0%, #7abde4 100%);
+}
+
+.container {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 70px auto;
+  padding: 25px;
+  border-radius: 5px;
+}
+.container header {
+  font-size: 30px;
+  font-weight: 600;
+}
+.container .userType {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+.userType input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+}
+.userType input:focus {
+  border-color: indigo;
+}
+.userType button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  background: #7be849;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+}
+.userType button:hover,
+.footer button:hover {
+  background: #23d60b;
+}
+.userType button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.container .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todoList li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.todoList li .icon {
+  position: absolute;
+  right: -45px;
+  background: #e7b13c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.todoList li:hover .icon {
+  right: 0px;
+}
+.container .footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer button {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #23d60b;
+  cursor: pointer;
+}
+.footer button:hover {
+  background: lawngreen;
+}
